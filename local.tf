@@ -10,7 +10,7 @@ locals {
     maintenancetime = var.maintenance_time
     owner = var.owner
     project = var.project
-    region = var.region
+    
     confidentiality = var.confidentiality
     compliance = var.compliance
     businessunit =var.business_unit
