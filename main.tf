@@ -4,6 +4,6 @@ resource "aws_cloudwatch_log_group" "main" {
   
   tags = merge(
     local.tags,
-    tomap{{ "Name"=clg-${var.region_id}-${var.environment}-${var.owner}-${var.application_service}-${var.seq_id}"})
-    )
+    tomap ({"name" = "clg-${var.region_id}-${var.environment}-${var.owner}-${var.application_service}-${var.seq_id}"})
+  )
 }
