@@ -3,7 +3,7 @@ variable "retention_in_days" {
 }
 
 variable "seq_id" {
-  description = "use to define the unique id 
+  description = "the numbering given to the seqid"
   default = ""
 }
 
@@ -57,17 +57,27 @@ variable "project"{
   default = ""
 }
 
-variable "region"{
-  description = "the name of the app role"
-  default = "eu-west-1"
-}
+
 
 variable "confidentiality"{
   description = "the name of the app role"
   default = "H C"
 }
 
-variable "compliance"{
+variable "compliance" {
   description = "the name of the app role"
   default = "pci"
+}
+
+variable "custom_tags" {
+  default = ""
+}
+variable "mandatory_tags" {
+  default = ""
+}
+variable "optional_tags" {
+  default = ""
+}
+variable "business_unit" {
+  default = ""
 }
