@@ -9,7 +9,7 @@ variable "seq_id" {
 
 variable "region_id" {
   description = "aws region name"
-  default ="euw1"
+  default ="eu-west1"
 }
 
 variable "environment" {
